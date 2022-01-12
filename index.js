@@ -87,8 +87,8 @@ Reyna's feedback is missing! Use what you know to do the following: (no function
   2. log the reviews array to the console to check your work
 */
 
-reviews[8].feedback = "this place is chill with really cool people, great for getting work done on weekdays";
-console.log(reviews[8].feedback)
+reviews[7].feedback = 'this place is chill with really cool people, great for getting work done on weekdays'
+console.log(reviews)
 
 
 
@@ -101,10 +101,9 @@ Write a function that creates an object with name, rating, feedback, add the new
   4. should return the resulting array
 */
 
-function addReview(newArray, name, rating, feedback){
-newArray = []
-
-return newArray
+function addReview(array, name, rating, feedback){
+let newObject = {name, rating, feedback}
+return array.pop(newObject)
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -123,7 +122,7 @@ function getReviewByIndex(array, number) {
 }
 
 
-  
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Write a function to get information about the most recent (last) review called `getLastReview`
@@ -137,10 +136,10 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview(/*Your code here*/) {
-  /*Your code here*/
+function getLastReview(array) {
+  return `${array[array.length-1].name} gave the restaurant a ${array[array.length-1].rating} star review, and their feedback was: ${array[array.length-1].feedback}`
 } 
-
+getLastReview(reviews)
 
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
