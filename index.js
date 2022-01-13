@@ -103,8 +103,12 @@ Write a function that creates an object with name, rating, feedback, add the new
 
 function addReview(array, name, rating, feedback){
 let newObject = {name, rating, feedback}
-return array.pop(newObject)
+print(newObject + '&&&&&&&&&&&&&&&&&&')
+array.push(newObject)
+return array
 }
+
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function to return a review based on the index of the review in the array.
