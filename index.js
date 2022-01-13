@@ -103,7 +103,6 @@ Write a function that creates an object with name, rating, feedback, add the new
 
 function addReview(array, name, rating, feedback){
 let newObject = {name, rating, feedback}
-print(newObject + '&&&&&&&&&&&&&&&&&&')
 array.push(newObject)
 return array
 }
